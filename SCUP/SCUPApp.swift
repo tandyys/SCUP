@@ -11,7 +11,8 @@ import SwiftUI
 struct SCUPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            ContentViewTest()
         }
     }
 }

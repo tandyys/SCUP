@@ -14,6 +14,9 @@
 		2752901C2BD77DBF00B5370A /* SCUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752901B2BD77DBF00B5370A /* SCUPTests.swift */; };
 		275290262BD77DBF00B5370A /* SCUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290252BD77DBF00B5370A /* SCUPUITests.swift */; };
 		275290282BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */; };
+		BF1920972BDA77E800094B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920962BDA77E800094B9C /* ViewController.swift */; };
+		BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */; };
+		BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19209A2BDA781B00094B9C /* ContentViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		275290212BD77DBF00B5370A /* SCUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275290252BD77DBF00B5370A /* SCUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITests.swift; sourceTree = "<group>"; };
 		275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF1920962BDA77E800094B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWrapper.swift; sourceTree = "<group>"; };
+		BF19209A2BDA781B00094B9C /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				2752900A2BD77DBE00B5370A /* SCUPApp.swift */,
 				2752900C2BD77DBE00B5370A /* ContentView.swift */,
+				BF1920962BDA77E800094B9C /* ViewController.swift */,
+				BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */,
+				BF19209A2BDA781B00094B9C /* ContentViewTest.swift */,
 				2752900E2BD77DBF00B5370A /* Assets.xcassets */,
 				275290102BD77DBF00B5370A /* Preview Content */,
 			);
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */,
+				BF1920972BDA77E800094B9C /* ViewController.swift in Sources */,
 				2752900D2BD77DBE00B5370A /* ContentView.swift in Sources */,
+				BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */,
 				2752900B2BD77DBE00B5370A /* SCUPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct PhototsView: View {
+    @State private var isViewControllerPresented = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+            VStack {
+                Button("Show ViewController") {
+                    self.isViewControllerPresented.toggle()
+                }
+            }
+            .sheet(isPresented: $isViewControllerPresented) {
+                ViewControllerWrapper()
+            }
+        }
 }
 
 #Preview {

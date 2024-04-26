@@ -14,6 +14,16 @@
 		2752901C2BD77DBF00B5370A /* SCUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752901B2BD77DBF00B5370A /* SCUPTests.swift */; };
 		275290262BD77DBF00B5370A /* SCUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290252BD77DBF00B5370A /* SCUPUITests.swift */; };
 		275290282BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */; };
+		2752903B2BD7AE7B00B5370A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752903A2BD7AE7B00B5370A /* AppDelegate.swift */; };
+		2752903D2BD7AE7B00B5370A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752903C2BD7AE7B00B5370A /* ContentView.swift */; };
+		2752903F2BD7AE7D00B5370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2752903E2BD7AE7D00B5370A /* Assets.xcassets */; };
+		275290422BD7AE7D00B5370A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275290412BD7AE7D00B5370A /* Preview Assets.xcassets */; };
+		2752904C2BD7AE7D00B5370A /* AR_SCUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */; };
+		275290562BD7AE7D00B5370A /* AR_SCUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */; };
+		275290582BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */; };
+		27540DEE2BDA0B030068ED5C /* PhotoTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DED2BDA0B030068ED5C /* PhotoTestView.swift */; };
+		27540DF02BDA0B5C0068ED5C /* PhotosTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */; };
+		27540DF22BDA0D6D0068ED5C /* PhototsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DF12BDA0D6D0068ED5C /* PhototsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +41,20 @@
 			remoteGlobalIDString = 275290062BD77DBE00B5370A;
 			remoteInfo = SCUP;
 		};
+		275290482BD7AE7D00B5370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27528FFF2BD77DBE00B5370A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275290372BD7AE7B00B5370A;
+			remoteInfo = "AR-SCUP";
+		};
+		275290522BD7AE7D00B5370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27528FFF2BD77DBE00B5370A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275290372BD7AE7B00B5370A;
+			remoteInfo = "AR-SCUP";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +68,20 @@
 		275290212BD77DBF00B5370A /* SCUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275290252BD77DBF00B5370A /* SCUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITests.swift; sourceTree = "<group>"; };
 		275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		275290382BD7AE7B00B5370A /* AR-SCUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-SCUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2752903A2BD7AE7B00B5370A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2752903C2BD7AE7B00B5370A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2752903E2BD7AE7D00B5370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275290412BD7AE7D00B5370A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-SCUPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPTests.swift; sourceTree = "<group>"; };
+		275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-SCUPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPUITests.swift; sourceTree = "<group>"; };
+		275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27540DED2BDA0B030068ED5C /* PhotoTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTestView.swift; sourceTree = "<group>"; };
+		27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTestController.swift; sourceTree = "<group>"; };
+		27540DF12BDA0D6D0068ED5C /* PhototsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhototsView.swift; sourceTree = "<group>"; };
+		27540DF32BDA15260068ED5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +106,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		275290352BD7AE7B00B5370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275290442BD7AE7D00B5370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2752904E2BD7AE7D00B5370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +136,9 @@
 				275290092BD77DBE00B5370A /* SCUP */,
 				2752901A2BD77DBF00B5370A /* SCUPTests */,
 				275290242BD77DBF00B5370A /* SCUPUITests */,
+				275290392BD7AE7B00B5370A /* AR-SCUP */,
+				2752904A2BD7AE7D00B5370A /* AR-SCUPTests */,
+				275290542BD7AE7D00B5370A /* AR-SCUPUITests */,
 				275290082BD77DBE00B5370A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +149,9 @@
 				275290072BD77DBE00B5370A /* SCUP.app */,
 				275290172BD77DBF00B5370A /* SCUPTests.xctest */,
 				275290212BD77DBF00B5370A /* SCUPUITests.xctest */,
+				275290382BD7AE7B00B5370A /* AR-SCUP.app */,
+				275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */,
+				275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +159,14 @@
 		275290092BD77DBE00B5370A /* SCUP */ = {
 			isa = PBXGroup;
 			children = (
+				27540DF32BDA15260068ED5C /* Info.plist */,
 				2752900A2BD77DBE00B5370A /* SCUPApp.swift */,
 				2752900C2BD77DBE00B5370A /* ContentView.swift */,
 				2752900E2BD77DBF00B5370A /* Assets.xcassets */,
 				275290102BD77DBF00B5370A /* Preview Content */,
+				27540DED2BDA0B030068ED5C /* PhotoTestView.swift */,
+				27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */,
+				27540DF12BDA0D6D0068ED5C /* PhototsView.swift */,
 			);
 			path = SCUP;
 			sourceTree = "<group>";
@@ -125,6 +194,42 @@
 				275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */,
 			);
 			path = SCUPUITests;
+			sourceTree = "<group>";
+		};
+		275290392BD7AE7B00B5370A /* AR-SCUP */ = {
+			isa = PBXGroup;
+			children = (
+				2752903A2BD7AE7B00B5370A /* AppDelegate.swift */,
+				2752903C2BD7AE7B00B5370A /* ContentView.swift */,
+				2752903E2BD7AE7D00B5370A /* Assets.xcassets */,
+				275290402BD7AE7D00B5370A /* Preview Content */,
+			);
+			path = "AR-SCUP";
+			sourceTree = "<group>";
+		};
+		275290402BD7AE7D00B5370A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				275290412BD7AE7D00B5370A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2752904A2BD7AE7D00B5370A /* AR-SCUPTests */ = {
+			isa = PBXGroup;
+			children = (
+				2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */,
+			);
+			path = "AR-SCUPTests";
+			sourceTree = "<group>";
+		};
+		275290542BD7AE7D00B5370A /* AR-SCUPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */,
+				275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */,
+			);
+			path = "AR-SCUPUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +288,59 @@
 			productReference = 275290212BD77DBF00B5370A /* SCUPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		275290372BD7AE7B00B5370A /* AR-SCUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275290592BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUP" */;
+			buildPhases = (
+				275290342BD7AE7B00B5370A /* Sources */,
+				275290352BD7AE7B00B5370A /* Frameworks */,
+				275290362BD7AE7B00B5370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR-SCUP";
+			productName = "AR-SCUP";
+			productReference = 275290382BD7AE7B00B5370A /* AR-SCUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275290462BD7AE7D00B5370A /* AR-SCUPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2752905C2BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUPTests" */;
+			buildPhases = (
+				275290432BD7AE7D00B5370A /* Sources */,
+				275290442BD7AE7D00B5370A /* Frameworks */,
+				275290452BD7AE7D00B5370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275290492BD7AE7D00B5370A /* PBXTargetDependency */,
+			);
+			name = "AR-SCUPTests";
+			productName = "AR-SCUPTests";
+			productReference = 275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		275290502BD7AE7D00B5370A /* AR-SCUPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2752905F2BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUPUITests" */;
+			buildPhases = (
+				2752904D2BD7AE7D00B5370A /* Sources */,
+				2752904E2BD7AE7D00B5370A /* Frameworks */,
+				2752904F2BD7AE7D00B5370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275290532BD7AE7D00B5370A /* PBXTargetDependency */,
+			);
+			name = "AR-SCUPUITests";
+			productName = "AR-SCUPUITests";
+			productReference = 275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +362,17 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 275290062BD77DBE00B5370A;
 					};
+					275290372BD7AE7B00B5370A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					275290462BD7AE7D00B5370A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 275290372BD7AE7B00B5370A;
+					};
+					275290502BD7AE7D00B5370A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 275290372BD7AE7B00B5370A;
+					};
 				};
 			};
 			buildConfigurationList = 275290022BD77DBE00B5370A /* Build configuration list for PBXProject "SCUP" */;
@@ -222,6 +391,9 @@
 				275290062BD77DBE00B5370A /* SCUP */,
 				275290162BD77DBF00B5370A /* SCUPTests */,
 				275290202BD77DBF00B5370A /* SCUPUITests */,
+				275290372BD7AE7B00B5370A /* AR-SCUP */,
+				275290462BD7AE7D00B5370A /* AR-SCUPTests */,
+				275290502BD7AE7D00B5370A /* AR-SCUPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +422,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		275290362BD7AE7B00B5370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275290422BD7AE7D00B5370A /* Preview Assets.xcassets in Resources */,
+				2752903F2BD7AE7D00B5370A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275290452BD7AE7D00B5370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2752904F2BD7AE7D00B5370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,7 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27540DF22BDA0D6D0068ED5C /* PhototsView.swift in Sources */,
 				2752900D2BD77DBE00B5370A /* ContentView.swift in Sources */,
+				27540DEE2BDA0B030068ED5C /* PhotoTestView.swift in Sources */,
+				27540DF02BDA0B5C0068ED5C /* PhotosTestController.swift in Sources */,
 				2752900B2BD77DBE00B5370A /* SCUPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +477,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		275290342BD7AE7B00B5370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2752903D2BD7AE7B00B5370A /* ContentView.swift in Sources */,
+				2752903B2BD7AE7B00B5370A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275290432BD7AE7D00B5370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2752904C2BD7AE7D00B5370A /* AR_SCUPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2752904D2BD7AE7D00B5370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275290582BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift in Sources */,
+				275290562BD7AE7D00B5370A /* AR_SCUPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +515,16 @@
 			isa = PBXTargetDependency;
 			target = 275290062BD77DBE00B5370A /* SCUP */;
 			targetProxy = 275290222BD77DBF00B5370A /* PBXContainerItemProxy */;
+		};
+		275290492BD7AE7D00B5370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275290372BD7AE7B00B5370A /* AR-SCUP */;
+			targetProxy = 275290482BD7AE7D00B5370A /* PBXContainerItemProxy */;
+		};
+		275290532BD7AE7D00B5370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275290372BD7AE7B00B5370A /* AR-SCUP */;
+			targetProxy = 275290522BD7AE7D00B5370A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -424,6 +658,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SCUP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SCUP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +687,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SCUP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SCUP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -542,6 +778,138 @@
 			};
 			name = Release;
 		};
+		2752905A2BD7AE7D00B5370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-SCUP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2752905B2BD7AE7D00B5370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-SCUP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2752905D2BD7AE7D00B5370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-SCUP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-SCUP";
+			};
+			name = Debug;
+		};
+		2752905E2BD7AE7D00B5370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-SCUP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR-SCUP";
+			};
+			name = Release;
+		};
+		275290602BD7AE7D00B5370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-SCUP";
+			};
+			name = Debug;
+		};
+		275290612BD7AE7D00B5370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goku.AR-SCUPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-SCUP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +945,33 @@
 			buildConfigurations = (
 				275290322BD77DBF00B5370A /* Debug */,
 				275290332BD77DBF00B5370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275290592BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2752905A2BD7AE7D00B5370A /* Debug */,
+				2752905B2BD7AE7D00B5370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2752905C2BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2752905D2BD7AE7D00B5370A /* Debug */,
+				2752905E2BD7AE7D00B5370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2752905F2BD7AE7D00B5370A /* Build configuration list for PBXNativeTarget "AR-SCUPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275290602BD7AE7D00B5370A /* Debug */,
+				275290612BD7AE7D00B5370A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-struct PhotoTestView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ViewControllerWrapper: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> ViewController {
+        return ViewController()
     }
-}
-
-#Preview {
-    PhotoTestView()
+    
+    func updateUIViewController(_ uiViewController: ViewController, context: Context) {}
 }

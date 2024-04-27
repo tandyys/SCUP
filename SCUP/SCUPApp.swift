@@ -12,7 +12,11 @@ struct SCUPApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            ContentViewTest()
+            NavigationView{
+                MenuView()
+            }
+            .navigationViewStyle(.stack)
+            
         }
     }
 }

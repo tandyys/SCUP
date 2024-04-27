@@ -17,6 +17,7 @@
 		BF1920972BDA77E800094B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920962BDA77E800094B9C /* ViewController.swift */; };
 		BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */; };
 		BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19209A2BDA781B00094B9C /* ContentViewTest.swift */; };
+		BF6E00B22BDD572A0097445B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E00B12BDD572A0097445B /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		BF1920962BDA77E800094B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWrapper.swift; sourceTree = "<group>"; };
 		BF19209A2BDA781B00094B9C /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
+		BF6E00B12BDD572A0097445B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +133,6 @@
 				275290072BD77DBE00B5370A /* SCUP.app */,
 				275290172BD77DBF00B5370A /* SCUPTests.xctest */,
 				275290212BD77DBF00B5370A /* SCUPUITests.xctest */,
-				275290382BD7AE7B00B5370A /* AR-SCUP.app */,
-				275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */,
-				275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,17 +140,14 @@
 		275290092BD77DBE00B5370A /* SCUP */ = {
 			isa = PBXGroup;
 			children = (
-				27540DF32BDA15260068ED5C /* Info.plist */,
 				2752900A2BD77DBE00B5370A /* SCUPApp.swift */,
 				2752900C2BD77DBE00B5370A /* ContentView.swift */,
 				BF1920962BDA77E800094B9C /* ViewController.swift */,
 				BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */,
 				BF19209A2BDA781B00094B9C /* ContentViewTest.swift */,
+				BF6E00B12BDD572A0097445B /* MenuView.swift */,
 				2752900E2BD77DBF00B5370A /* Assets.xcassets */,
 				275290102BD77DBF00B5370A /* Preview Content */,
-				27540DED2BDA0B030068ED5C /* PhotoTestView.swift */,
-				27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */,
-				27540DF12BDA0D6D0068ED5C /* PhototsView.swift */,
 			);
 			path = SCUP;
 			sourceTree = "<group>";
@@ -184,9 +180,6 @@
 		275290392BD7AE7B00B5370A /* AR-SCUP */ = {
 			isa = PBXGroup;
 			children = (
-				2752903A2BD7AE7B00B5370A /* AppDelegate.swift */,
-				2752903C2BD7AE7B00B5370A /* ContentView.swift */,
-				2752903E2BD7AE7D00B5370A /* Assets.xcassets */,
 				275290402BD7AE7D00B5370A /* Preview Content */,
 			);
 			path = "AR-SCUP";
@@ -195,7 +188,6 @@
 		275290402BD7AE7D00B5370A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				275290412BD7AE7D00B5370A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -203,7 +195,6 @@
 		2752904A2BD7AE7D00B5370A /* AR-SCUPTests */ = {
 			isa = PBXGroup;
 			children = (
-				2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */,
 			);
 			path = "AR-SCUPTests";
 			sourceTree = "<group>";
@@ -211,8 +202,6 @@
 		275290542BD7AE7D00B5370A /* AR-SCUPUITests */ = {
 			isa = PBXGroup;
 			children = (
-				275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */,
-				275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */,
 			);
 			path = "AR-SCUPUITests";
 			sourceTree = "<group>";
@@ -287,7 +276,6 @@
 			);
 			name = "AR-SCUP";
 			productName = "AR-SCUP";
-			productReference = 275290382BD7AE7B00B5370A /* AR-SCUP.app */;
 			productType = "com.apple.product-type.application";
 		};
 		275290462BD7AE7D00B5370A /* AR-SCUPTests */ = {
@@ -305,7 +293,6 @@
 			);
 			name = "AR-SCUPTests";
 			productName = "AR-SCUPTests";
-			productReference = 275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		275290502BD7AE7D00B5370A /* AR-SCUPUITests */ = {
@@ -323,7 +310,6 @@
 			);
 			name = "AR-SCUPUITests";
 			productName = "AR-SCUPUITests";
-			productReference = 275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -411,8 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275290422BD7AE7D00B5370A /* Preview Assets.xcassets in Resources */,
-				2752903F2BD7AE7D00B5370A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */,
+				BF6E00B22BDD572A0097445B /* MenuView.swift in Sources */,
 				BF1920972BDA77E800094B9C /* ViewController.swift in Sources */,
 				2752900D2BD77DBE00B5370A /* ContentView.swift in Sources */,
 				BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */,
@@ -466,8 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2752903D2BD7AE7B00B5370A /* ContentView.swift in Sources */,
-				2752903B2BD7AE7B00B5370A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2752904C2BD7AE7D00B5370A /* AR_SCUPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275290582BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift in Sources */,
-				275290562BD7AE7D00B5370A /* AR_SCUPUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

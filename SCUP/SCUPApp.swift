@@ -11,9 +11,14 @@ import SwiftUI
 struct SCUPApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
             NavigationView{
                 MenuView()
+                    .onAppear {
+                        let appearance = UINavigationBarAppearance()
+                        appearance.setBackIndicatorImage(UIImage(systemName: "chevron.left"), transitionMaskImage: UIImage(systemName: "chevron.left"))
+                        appearance.backButtonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.clear] // Hide the "Back" text
+                        UINavigationBar.appearance().standardAppearance = appearance
+                    }
             }
             .navigationViewStyle(.stack)
             

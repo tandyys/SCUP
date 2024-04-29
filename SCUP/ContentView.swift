@@ -78,6 +78,7 @@ struct ContentView: View {
     @ObservedObject private var drawingManager = DrawingManager()
     @State private var isPopoverPresented = false
     @State private var isDownloadAlertPresented = false
+    @State private var isClearAlertPresented = false
     
     @State private var currentLine: Line?
     
@@ -90,7 +91,9 @@ struct ContentView: View {
                         lineSize: $drawingManager.lineSize,
                         undoAction: drawingManager.undo,
                         redoAction: drawingManager.redo,
-                        clearAction: drawingManager.clear,
+                        clearAction: {
+                            isClearAlertPresented.toggle()
+                        },
                         downloadAction: {
                             isDownloadAlertPresented.toggle()
                         }
@@ -138,7 +141,7 @@ struct ContentView: View {
                     .padding()
                 }
             }
-            .background(Color(hex: 0xD9D9D9))
+            .background(Color(hex: 0xFFFFFF))
             
             VStack {
                 Spacer()
@@ -149,13 +152,13 @@ struct ContentView: View {
                         }) {
                             Image(systemName: "slider.horizontal.3")
                                 .font(.title)
-                                .padding()
+                                .padding(20)
                                 .foregroundColor(.primary)
                                 .cornerRadius(24)
                         }
                         .background(Color.white)
-                        .cornerRadius(24)
-                        .shadow(radius: 8)
+                        .cornerRadius(32)
+                        .shadow(radius: 4)
                     }
                     .padding(.horizontal, 24)
                     Spacer()
@@ -197,12 +200,17 @@ struct ContentView: View {
                 return Alert(title: Text("Error"), message: Text("Failed to capture canvas. Please try again."), dismissButton: .default(Text("OK")))
             }
         }
+        .alert(isPresented: $isClearAlertPresented) {
+            Alert(title: Text("Clear Canvas"), message: Text("Are you sure you want to clear the canvas?"), primaryButton: .destructive(Text("Clear"), action: {
+                drawingManager.clear()
+            }), secondaryButton: .cancel())
+        }
     }
     
     @ViewBuilder
     func clearButton() -> some View {
         Button {
-            drawingManager.clear()
+            isClearAlertPresented.toggle()
         } label: {
             Image(systemName: "trash.circle.fill")
                 .font(.largeTitle)
@@ -217,6 +225,7 @@ struct ContentView: View {
     }
 }
 
+
 struct ButtonContainerView: View {
     @Binding var selectedColor: Color
     @Binding var lineSize: CGFloat
@@ -228,22 +237,26 @@ struct ButtonContainerView: View {
     var body: some View {
         HStack() {
             Button(action: undoAction) {
-                Image(systemName: "arrow.uturn.backward.circle.fill")
-                    .font(.title)
-                    .padding()
+                Image("Undo")
+                    .resizable()
+                    .frame(width: 52, height: 52)
+                    .padding(16)
                     .background(Color.white)
                     .foregroundColor(.primary)
-                    .cornerRadius(10)
-            }
+                    .cornerRadius(32)
+            }.padding(.trailing)
+                .shadow(radius: 4)
             Button(action: redoAction) {
-                Image(systemName: "arrow.uturn.forward.circle.fill")
-                    .font(.title)
-                    .padding()
+                Image("Redo")
+                    .resizable()
+                    .frame(width: 52, height: 52)
+                    .padding(16)
                     .background(Color.white)
                     .foregroundColor(.primary)
-                    .cornerRadius(10)
-            }
-//            Buat prevent mistake, clear allnya di deket pop-up aj
+                    .cornerRadius(32)
+            }.padding(.trailing)
+                .shadow(radius: 4)
+//            Buat prevent mistake, clear allnya di pop-up aj
 //            Button(action: clearAction) {
 //                Image(systemName: "trash.circle.fill")
 //                    .font(.title)
@@ -253,21 +266,26 @@ struct ButtonContainerView: View {
 //                    .cornerRadius(10)
 //            }
             Button(action: downloadAction) {
-                Image(systemName: "arrow.down.to.line.circle.fill")
-                    .font(.title)
-                    .padding()
+                Image("DownloadImage")
+                    .resizable()
+                    .frame(width: 52, height: 52)
+                    .padding(16)
                     .background(Color.white)
                     .foregroundColor(.primary)
-                    .cornerRadius(10)
-            }
+                    .cornerRadius(32)
+            }.padding(.trailing)
+                .shadow(radius: 4)
             Button(action: clearAction) {
-                Image(systemName: "wand.and.stars")
-                    .font(.title)
-                    .padding()
+                Image("Reimaging")
+                    .resizable()
+                    .frame(width: 52, height: 52)
+                    .padding(16)
                     .background(Color.white)
                     .foregroundColor(.primary)
-                    .cornerRadius(10)
-            }
+                    .cornerRadius(32)
+                    
+            }.padding(.trailing)
+                .shadow(radius: 4)
         }
     }
 }

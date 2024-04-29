@@ -15,8 +15,8 @@ struct SCUPApp: App {
                 MenuView()
                     .onAppear {
                         let appearance = UINavigationBarAppearance()
-                        appearance.setBackIndicatorImage(UIImage(systemName: "chevron.left"), transitionMaskImage: UIImage(systemName: "chevron.left"))
-                        appearance.backButtonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.clear] // Hide the "Back" text
+                        appearance.setBackIndicatorImage(UIImage(systemName: "house"), transitionMaskImage: UIImage(systemName: "house"))
+                        appearance.backButtonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.clear]
                         UINavigationBar.appearance().standardAppearance = appearance
                     }
             }

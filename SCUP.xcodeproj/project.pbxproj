@@ -14,16 +14,10 @@
 		2752901C2BD77DBF00B5370A /* SCUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752901B2BD77DBF00B5370A /* SCUPTests.swift */; };
 		275290262BD77DBF00B5370A /* SCUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290252BD77DBF00B5370A /* SCUPUITests.swift */; };
 		275290282BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */; };
-		2752903B2BD7AE7B00B5370A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752903A2BD7AE7B00B5370A /* AppDelegate.swift */; };
-		2752903D2BD7AE7B00B5370A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752903C2BD7AE7B00B5370A /* ContentView.swift */; };
-		2752903F2BD7AE7D00B5370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2752903E2BD7AE7D00B5370A /* Assets.xcassets */; };
-		275290422BD7AE7D00B5370A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275290412BD7AE7D00B5370A /* Preview Assets.xcassets */; };
-		2752904C2BD7AE7D00B5370A /* AR_SCUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */; };
-		275290562BD7AE7D00B5370A /* AR_SCUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */; };
-		275290582BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */; };
-		27540DEE2BDA0B030068ED5C /* PhotoTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DED2BDA0B030068ED5C /* PhotoTestView.swift */; };
-		27540DF02BDA0B5C0068ED5C /* PhotosTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */; };
-		27540DF22BDA0D6D0068ED5C /* PhototsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27540DF12BDA0D6D0068ED5C /* PhototsView.swift */; };
+		BF1920972BDA77E800094B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920962BDA77E800094B9C /* ViewController.swift */; };
+		BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */; };
+		BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19209A2BDA781B00094B9C /* ContentViewTest.swift */; };
+		BF6E00B22BDD572A0097445B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E00B12BDD572A0097445B /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,20 +62,10 @@
 		275290212BD77DBF00B5370A /* SCUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275290252BD77DBF00B5370A /* SCUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITests.swift; sourceTree = "<group>"; };
 		275290272BD77DBF00B5370A /* SCUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		275290382BD7AE7B00B5370A /* AR-SCUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-SCUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2752903A2BD7AE7B00B5370A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2752903C2BD7AE7B00B5370A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2752903E2BD7AE7D00B5370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		275290412BD7AE7D00B5370A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-SCUPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPTests.swift; sourceTree = "<group>"; };
-		275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-SCUPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPUITests.swift; sourceTree = "<group>"; };
-		275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_SCUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		27540DED2BDA0B030068ED5C /* PhotoTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTestView.swift; sourceTree = "<group>"; };
-		27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTestController.swift; sourceTree = "<group>"; };
-		27540DF12BDA0D6D0068ED5C /* PhototsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhototsView.swift; sourceTree = "<group>"; };
-		27540DF32BDA15260068ED5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BF1920962BDA77E800094B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWrapper.swift; sourceTree = "<group>"; };
+		BF19209A2BDA781B00094B9C /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
+		BF6E00B12BDD572A0097445B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +133,6 @@
 				275290072BD77DBE00B5370A /* SCUP.app */,
 				275290172BD77DBF00B5370A /* SCUPTests.xctest */,
 				275290212BD77DBF00B5370A /* SCUPUITests.xctest */,
-				275290382BD7AE7B00B5370A /* AR-SCUP.app */,
-				275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */,
-				275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,14 +140,14 @@
 		275290092BD77DBE00B5370A /* SCUP */ = {
 			isa = PBXGroup;
 			children = (
-				27540DF32BDA15260068ED5C /* Info.plist */,
 				2752900A2BD77DBE00B5370A /* SCUPApp.swift */,
 				2752900C2BD77DBE00B5370A /* ContentView.swift */,
+				BF1920962BDA77E800094B9C /* ViewController.swift */,
+				BF1920982BDA780400094B9C /* ViewControllerWrapper.swift */,
+				BF19209A2BDA781B00094B9C /* ContentViewTest.swift */,
+				BF6E00B12BDD572A0097445B /* MenuView.swift */,
 				2752900E2BD77DBF00B5370A /* Assets.xcassets */,
 				275290102BD77DBF00B5370A /* Preview Content */,
-				27540DED2BDA0B030068ED5C /* PhotoTestView.swift */,
-				27540DEF2BDA0B5C0068ED5C /* PhotosTestController.swift */,
-				27540DF12BDA0D6D0068ED5C /* PhototsView.swift */,
 			);
 			path = SCUP;
 			sourceTree = "<group>";
@@ -199,9 +180,6 @@
 		275290392BD7AE7B00B5370A /* AR-SCUP */ = {
 			isa = PBXGroup;
 			children = (
-				2752903A2BD7AE7B00B5370A /* AppDelegate.swift */,
-				2752903C2BD7AE7B00B5370A /* ContentView.swift */,
-				2752903E2BD7AE7D00B5370A /* Assets.xcassets */,
 				275290402BD7AE7D00B5370A /* Preview Content */,
 			);
 			path = "AR-SCUP";
@@ -210,7 +188,6 @@
 		275290402BD7AE7D00B5370A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				275290412BD7AE7D00B5370A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -218,7 +195,6 @@
 		2752904A2BD7AE7D00B5370A /* AR-SCUPTests */ = {
 			isa = PBXGroup;
 			children = (
-				2752904B2BD7AE7D00B5370A /* AR_SCUPTests.swift */,
 			);
 			path = "AR-SCUPTests";
 			sourceTree = "<group>";
@@ -226,8 +202,6 @@
 		275290542BD7AE7D00B5370A /* AR-SCUPUITests */ = {
 			isa = PBXGroup;
 			children = (
-				275290552BD7AE7D00B5370A /* AR_SCUPUITests.swift */,
-				275290572BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift */,
 			);
 			path = "AR-SCUPUITests";
 			sourceTree = "<group>";
@@ -302,7 +276,6 @@
 			);
 			name = "AR-SCUP";
 			productName = "AR-SCUP";
-			productReference = 275290382BD7AE7B00B5370A /* AR-SCUP.app */;
 			productType = "com.apple.product-type.application";
 		};
 		275290462BD7AE7D00B5370A /* AR-SCUPTests */ = {
@@ -320,7 +293,6 @@
 			);
 			name = "AR-SCUPTests";
 			productName = "AR-SCUPTests";
-			productReference = 275290472BD7AE7D00B5370A /* AR-SCUPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		275290502BD7AE7D00B5370A /* AR-SCUPUITests */ = {
@@ -338,7 +310,6 @@
 			);
 			name = "AR-SCUPUITests";
 			productName = "AR-SCUPUITests";
-			productReference = 275290512BD7AE7D00B5370A /* AR-SCUPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -426,8 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275290422BD7AE7D00B5370A /* Preview Assets.xcassets in Resources */,
-				2752903F2BD7AE7D00B5370A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,10 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27540DF22BDA0D6D0068ED5C /* PhototsView.swift in Sources */,
+				BF19209B2BDA781B00094B9C /* ContentViewTest.swift in Sources */,
+				BF6E00B22BDD572A0097445B /* MenuView.swift in Sources */,
+				BF1920972BDA77E800094B9C /* ViewController.swift in Sources */,
 				2752900D2BD77DBE00B5370A /* ContentView.swift in Sources */,
-				27540DEE2BDA0B030068ED5C /* PhotoTestView.swift in Sources */,
-				27540DF02BDA0B5C0068ED5C /* PhotosTestController.swift in Sources */,
+				BF1920992BDA780400094B9C /* ViewControllerWrapper.swift in Sources */,
 				2752900B2BD77DBE00B5370A /* SCUPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,8 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2752903D2BD7AE7B00B5370A /* ContentView.swift in Sources */,
-				2752903B2BD7AE7B00B5370A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2752904C2BD7AE7D00B5370A /* AR_SCUPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,8 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275290582BD7AE7D00B5370A /* AR_SCUPUITestsLaunchTests.swift in Sources */,
-				275290562BD7AE7D00B5370A /* AR_SCUPUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,39 @@
 //
 
 import SwiftUI
+import UIKit
+import AVFoundation
+
+public extension UIImage {
+    /// Resize image while keeping the aspect ratio. Original image is not modified.
+    /// - Parameters:
+    ///   - width: A new width in pixels.
+    ///   - height: A new height in pixels.
+    /// - Returns: Resized image.
+    /// Reference: https://medium.com/@grujic.nikola91/resize-uiimage-in-swift-3e51f09f7a02
+    func resize(_ width: Int, _ height: Int) -> UIImage {
+        // Keep aspect ratio
+        let maxSize = CGSize(width: width, height: height)
+
+        let availableRect = AVFoundation.AVMakeRect(
+            aspectRatio: self.size,
+            insideRect: .init(origin: .zero, size: maxSize)
+        )
+        let targetSize = availableRect.size
+
+        // Set scale of renderer so that 1pt == 1px
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        let renderer = UIGraphicsImageRenderer(size: targetSize, format: format)
+
+        // Resize the image
+        let resized = renderer.image { _ in
+            self.draw(in: CGRect(origin: .zero, size: targetSize))
+        }
+
+        return resized
+    }
+}
 
 struct Line {
     var points: [CGPoint]
@@ -46,7 +79,7 @@ class DrawingManager: ObservableObject {
     }
     
     func captureCanvas() -> UIImage? {
-        let canvasSize = CGSize(width: 1024, height: 1024)
+        let canvasSize = CGSize(width: 1024, height: 1024 )
         UIGraphicsBeginImageContextWithOptions(canvasSize, false, UIScreen.main.scale)
         
         guard let context = UIGraphicsGetCurrentContext() else {
@@ -69,12 +102,12 @@ class DrawingManager: ObservableObject {
         
         UIGraphicsEndImageContext()
         
-        return canvasImage
+        return canvasImage?.resize(512, 512)
     }
 
 }
 
-struct ContentView: View {
+struct CanvasView: View {
     @ObservedObject private var drawingManager = DrawingManager()
     @State private var isPopoverPresented = false
     @State private var isDownloadAlertPresented = false
@@ -117,7 +150,7 @@ struct ContentView: View {
                                         }
                                     }
                                 }
-                                .frame(width: 1024, height: 1024)
+                                .frame(width: 1024 , height: 1024)
                                 .background(Color(hex: 0xFFFFFF))
                                 .gesture(DragGesture(minimumDistance: 0)
                                     .onChanged({ value in
@@ -215,6 +248,54 @@ struct ContentView: View {
         updatedLine.points.append(point)
         currentLine = updatedLine
     }
+    
+    func saveSketch() {
+        
+    }
+    
+    
+//    func saveSketch() {
+//      guard let imageData = drawingManager.captureCanvas()?.pngData() else {
+//        print("Error: Could not extract image data")
+//        return
+//      }
+//
+//      let sketch = SketchModel(data: imageData)
+//
+//      // Save locally using SwiftData
+//      do {
+//        try databaseManager.save(sketch)
+//        print("Sketch saved locally")
+//      } catch {
+//        print("Error saving sketch locally: \(error)")
+//      }
+//
+//      // Save to CloudKit for remote storage and URL
+//      saveSketchToCloudKit(sketch: sketch)
+//    }
+//    
+//    func saveSketchToCloudKit(sketch: SketchModel) {
+//        let record = CKRecord(recordType: "Sketch")
+//        record["id"] = sketch.id as CKRecordValue
+//        record["data"] = sketch.data as CKRecordValue
+//
+//        publicDatabase.save(record) { record, error in
+//            if let error = error {
+//                print("Error saving sketch to CloudKit: \(error)")
+//                return
+//            }
+//
+//            guard let record = record else { return }
+//
+//            // Get the CloudKit URL based on the record ID
+//            let cloudKitURL = record.recordID.webURL
+//
+//            print("Sketch saved to CloudKit, URL:", cloudKitURL ?? "N/A")
+//
+//            // Use the cloudKitURL in your API call here
+//            // ...
+//        }
+//    }
 }
 
 struct ButtonContainerView: View {
@@ -284,8 +365,8 @@ extension Color {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CanvasView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CanvasView()
     }
 }

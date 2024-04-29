@@ -23,7 +23,7 @@ struct MenuView: View {
                 
                 HStack(spacing: 60) {
                     //1
-                    NavigationLink(destination: ContentView(),label:{
+                    NavigationLink(destination: CanvasView(),label:{
                         Image("StartScribble")
                             .resizable()
                             .frame(width: 168, height: 168)
@@ -31,7 +31,7 @@ struct MenuView: View {
                     )
                     
                     //2
-                    NavigationLink(destination: ContentViewTest(),label:{
+                    NavigationLink(destination: CanvasView(),label:{
                         Image("AccessAlbumAssets")
                             .resizable()
                             .frame(width: 168, height: 168)
@@ -39,7 +39,7 @@ struct MenuView: View {
                     )
                     
                     //3
-                    NavigationLink(destination: ContentView(),label:{
+                    NavigationLink(destination: CanvasView(),label:{
                         Image("HowToUse")
                             .resizable()
                             .frame(width: 168, height: 168)

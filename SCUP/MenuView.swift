@@ -39,7 +39,7 @@ struct MenuView: View {
                     )
                     
                     //3
-                    NavigationLink(destination: ContentView(),label:{
+                    NavigationLink(destination: TutorialView(),label:{
                         Image("HowToUse")
                             .resizable()
                             .frame(width: 168, height: 168)

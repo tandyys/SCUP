@@ -150,11 +150,10 @@ struct ContentView: View {
                         Button(action: {
                             isPopoverPresented.toggle()
                         }) {
-                            Image(systemName: "slider.horizontal.3")
-                                .font(.title)
-                                .padding(20)
-                                .foregroundColor(.primary)
-                                .cornerRadius(24)
+                            Image("PopOver")
+                                .resizable()
+                                .frame(width: 52, height: 52)
+                                .padding(16)
                         }
                         .background(Color.white)
                         .cornerRadius(32)
@@ -186,7 +185,7 @@ struct ContentView: View {
                 .padding()
                 .background(Color.white)
                 .cornerRadius(40)
-                .position(x: 60, y: UIScreen.main.bounds.height / 2)
+                .position(x: 80, y: UIScreen.main.bounds.height / 2)
                 .shadow(radius: 8)
             }
         }
@@ -207,7 +206,10 @@ struct ContentView: View {
         Button {
             isClearAlertPresented.toggle()
         } label: {
-            Image(systemName: "trash.circle.fill")
+            Image("Trash")
+                .resizable()
+                .frame(width: 40, height: 40)
+                .padding()
                 .font(.largeTitle)
                 .foregroundColor(.red)
         }

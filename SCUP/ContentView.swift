@@ -191,21 +191,16 @@ struct ContentView: View {
             }
         }
         .alert(isPresented: $isDownloadAlertPresented) {
-            let canvasImage = drawingManager.captureCanvas()
-            if let imageData = canvasImage?.jpegData(compressionQuality: 1) {
-                return Alert(title: Text("Download Canvas"), message: Text("Do you want to save the canvas to your photo library?"), primaryButton: .default(Text("Save"), action: {
-                    UIImageWriteToSavedPhotosAlbum(UIImage(data: imageData)!, nil, nil, nil)
-                }), secondaryButton: .cancel())
-            } else {
-                return Alert(title: Text("Error"), message: Text("Failed to capture canvas. Please try again."), dismissButton: .default(Text("OK")))
+                    let canvasImage = drawingManager.captureCanvas()
+                    if let imageData = canvasImage?.jpegData(compressionQuality: 1) {
+                        return Alert(title: Text("Download Canvas"), message: Text("Do you want to save the canvas to your photo library?"), primaryButton: .default(Text("Save"), action: {
+                            UIImageWriteToSavedPhotosAlbum(UIImage(data: imageData)!, nil, nil, nil)
+                        }), secondaryButton: .cancel())
+                    } else {
+                        return Alert(title: Text("Error"), message: Text("Failed to capture canvas. Please try again."), dismissButton: .default(Text("OK")))
+                    }
+                }
             }
-        }
-        .alert(isPresented: $isClearAlertPresented) {
-            Alert(title: Text("Clear Canvas"), message: Text("Are you sure you want to clear the canvas?"), primaryButton: .destructive(Text("Clear"), action: {
-                drawingManager.clear()
-            }), secondaryButton: .cancel())
-        }
-    }
     
     @ViewBuilder
     func clearButton() -> some View {

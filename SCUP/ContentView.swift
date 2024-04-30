@@ -74,13 +74,17 @@ class DrawingManager: ObservableObject {
 
 }
 
+enum AlertType {
+    case isDownload, isClear
+}
+
 struct ContentView: View {
     @ObservedObject private var drawingManager = DrawingManager()
     @State private var isPopoverPresented = false
-    @State private var isDownloadAlertPresented = false
-    @State private var isClearAlertPresented = false
-    
+    @State private var activeAlert = false
+
     @State private var currentLine: Line?
+    @State private var alertId : AlertType = .isClear
     
     var body: some View {
         ZStack {
@@ -92,10 +96,13 @@ struct ContentView: View {
                         undoAction: drawingManager.undo,
                         redoAction: drawingManager.redo,
                         clearAction: {
-                            isClearAlertPresented.toggle()
+                            activeAlert.toggle()
+                            self.alertId = .isClear
+                            drawingManager.clear()
                         },
                         downloadAction: {
-                            isDownloadAlertPresented.toggle()
+                            activeAlert.toggle()
+                            self.alertId = .isDownload
                         }
                     )
                     GeometryReader { geometry in
@@ -184,27 +191,37 @@ struct ContentView: View {
                 .frame(width: 40, height: 400)
                 .padding()
                 .background(Color.white)
-                .cornerRadius(40)
+                .cornerRadius(28)
                 .position(x: 80, y: UIScreen.main.bounds.height / 2)
                 .shadow(radius: 8)
             }
         }
-        .alert(isPresented: $isDownloadAlertPresented) {
-                    let canvasImage = drawingManager.captureCanvas()
+        .alert(isPresented: $activeAlert) {
+            print(alertId)
+            switch alertId {
+            case .isDownload:
+                let canvasImage = drawingManager.captureCanvas()
                     if let imageData = canvasImage?.jpegData(compressionQuality: 1) {
                         return Alert(title: Text("Download Canvas"), message: Text("Do you want to save the canvas to your photo library?"), primaryButton: .default(Text("Save"), action: {
-                            UIImageWriteToSavedPhotosAlbum(UIImage(data: imageData)!, nil, nil, nil)
-                        }), secondaryButton: .cancel())
+                                UIImageWriteToSavedPhotosAlbum(UIImage(data: imageData)!, nil, nil, nil)
+                            }), secondaryButton: .cancel())
                     } else {
                         return Alert(title: Text("Error"), message: Text("Failed to capture canvas. Please try again."), dismissButton: .default(Text("OK")))
                     }
-                }
+            case .isClear:
+                return Alert(title: Text("Clear Canvas"), message: Text("Are you sure you want to clear the canvas?"), primaryButton: .destructive(Text("Clear"), action: {
+                    drawingManager.clear()
+                    }), secondaryButton: .cancel())
+
             }
+        }
+    }
     
     @ViewBuilder
     func clearButton() -> some View {
         Button {
-            isClearAlertPresented.toggle()
+            activeAlert.toggle()
+            self.alertId = .isClear
         } label: {
             Image("Trash")
                 .resizable()

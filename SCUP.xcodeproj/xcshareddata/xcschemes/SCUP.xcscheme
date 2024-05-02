@@ -82,7 +82,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "REPLICATE_API_KEY"
-            value = "r8_FcpCqclbDzIeU2dUJPUH1RTghTkYqqk1m2sad"
+            value = "r8_KDfGsJfMcA3aeWdYCl4x9KwANm14fR948bVy1"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

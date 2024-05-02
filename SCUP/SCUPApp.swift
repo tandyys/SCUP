@@ -6,9 +6,34 @@
 //
 
 import SwiftUI
+import SwiftData
+import FirebaseCore
+import UIKit
+import Replicate
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 @main
 struct SCUPApp: App {
+    let container : ModelContainer = {
+        let schema = Schema([SketchModel.self])
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try! ModelContainer(for: schema, configurations: config)
+        
+        return container
+    }()
+    
+    let client = Replicate.Client(token: ProcessInfo.processInfo.environment["REPLICATE_API_KEY"] ?? "")
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
@@ -21,7 +46,7 @@ struct SCUPApp: App {
                     }
             }
             .navigationViewStyle(.stack)
-            
         }
+        .modelContainer(container)
     }
 }

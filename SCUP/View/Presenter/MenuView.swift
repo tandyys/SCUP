@@ -27,22 +27,28 @@ struct MenuView: View {
                         Image("StartScribble")
                             .resizable()
                             .frame(width: 168, height: 168)
+                            .cornerRadius(50)
+                            .hoverEffect(.lift)
                         }
                     )
                     
                     //2
-                    NavigationLink(destination: ContentViewTest(),label:{
+                    NavigationLink(destination: GalleryView(),label:{
                         Image("AccessAlbumAssets")
                             .resizable()
                             .frame(width: 168, height: 168)
+                            .cornerRadius(50)
+                            .hoverEffect(.lift)
                         }
                     )
                     
                     //3
-                    NavigationLink(destination: ContentView(),label:{
+                    NavigationLink(destination: TutorialView(),label:{
                         Image("HowToUse")
                             .resizable()
                             .frame(width: 168, height: 168)
+                            .cornerRadius(50)
+                            .hoverEffect(.lift)
                         }
                     )
                     
@@ -76,7 +82,7 @@ struct MenuView: View {
 }
 
 extension Color {
-    init(hex: String) {
+    init(hex: String, colorOpacity: Double = 0.95) {
         var cleanHexCode = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         cleanHexCode = cleanHexCode.replacingOccurrences(of: "#", with: "")
         var rgb: UInt64 = 0
@@ -86,12 +92,9 @@ extension Color {
         let redValue = Double((rgb >> 16) & 0xFF) / 255.0
         let greenValue = Double((rgb >> 8) & 0xFF) / 255.0
         let blueValue = Double(rgb & 0xFF) / 255.0
-        self.init(red: redValue, green: greenValue, blue: blueValue)
+        self.init(red: redValue, green: greenValue, blue: blueValue, opacity: colorOpacity)
     }
 }
-
-struct MenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuView()
-    }
+#Preview {
+    MenuView()
 }

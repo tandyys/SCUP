@@ -45,7 +45,7 @@ struct GalleryView: View {
             VStack(spacing: 0) {
                 ScrollView(.horizontal, showsIndicators: true) {
                     LazyHStack(spacing: spacing) {
-                        ForEach(sketches) { sketch in
+                        ForEach(sketches.reversed()) { sketch in
                             VStack {
                                 //                                if sketch.sketchURL != "" {
                                 ImageView(url: sketch.sketchURL, url2: sketch.resultURL)
@@ -182,7 +182,7 @@ struct GalleryView: View {
         .onAppear {
             print("GalleryView:", sketches.count)
             if sketches.count > 0 {
-                scrollPos = sketches[0].id
+                scrollPos = sketches[sketches.count-1].id
             }
             sketches.forEach { sketch in
                 print(sketch.id, ":", sketch.persistentModelID)

@@ -74,7 +74,7 @@ class OutputViewModel: ObservableObject {
                     "content": [
                         [
                             "type": "text",
-                            "text": "What’s in this image?",
+                            "text": "What is in the image, you can tell us how it looks and what are the key points, but don't point out that it is a sketch.",
                         ],
                         [
                             "type": "image_url",
@@ -124,10 +124,12 @@ class OutputViewModel: ObservableObject {
                             print("Error: Could not parse response data")
                             return
                         }
+                            let prompt = "\(content) with a Fun, not too realistic Illustration"
                         
                         DispatchQueue.main.async {
-                            completion(content)
+                            completion(prompt)
                         }
+                        
                     } catch {
                         print("Error: Could not parse response JSON")
                     }

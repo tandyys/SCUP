@@ -24,7 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct SCUPApp: App {
     let container : ModelContainer = {
         let schema = Schema([SketchModel.self])
-        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let config = ModelConfiguration(isStoredInMemoryOnly: false)
         let container = try! ModelContainer(for: schema, configurations: config)
         
         return container
